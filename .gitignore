@@ -57,3 +57,4 @@ coverage/
 .ninja_deps
 .ninja_log
 /download
+.DS_Store
