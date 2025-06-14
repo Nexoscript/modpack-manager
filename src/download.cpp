@@ -3,7 +3,7 @@
 #include <fstream>
 #include <curl/curl.h>
 #include <sys/stat.h>
-#include <sys/types.h>
+
 #ifdef _WIN32
     #include <direct.h>
     #define MKDIR(dir) _mkdir(dir)
