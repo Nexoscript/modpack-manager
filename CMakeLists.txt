@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.31)
-project(modpack-updater)
+project(modpack-manager)
 
 set(CMAKE_CXX_STANDARD 26)
 
 find_package(CURL REQUIRED)
 
 add_executable(
-        modpack-updater
+        modpack-manager
         src/main.cpp
         src/download.cpp
         src/download.h
@@ -16,4 +16,4 @@ add_executable(
         src/console.h
 )
 
-target_link_libraries(modpack-updater PRIVATE CURL::libcurl)
+target_link_libraries(modpack-manager PRIVATE CURL::libcurl)
